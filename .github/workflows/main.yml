@@ -27,7 +27,7 @@ jobs:
         - name: 'Install requirements'
           run: |
       
-            pipx install ../requirements.txt
+            pipx install requirements.txt
 #           python3 -m pip install --upgrade pip
         - name: 'Renew'
           env:
