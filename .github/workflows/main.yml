@@ -26,8 +26,9 @@ jobs:
 
         - name: 'Install requirements'
           run: |
-            python3 -m pip install -r ./requirements.txt
-#            python3 -m pip install --upgrade pip
+            brew install pipx
+            python3 -m pipx install -r ./requirements.txt
+#           python3 -m pip install --upgrade pip
         - name: 'Renew'
           env:
             EU_USER_ID: ${{ secrets.EU_USER_ID }}
