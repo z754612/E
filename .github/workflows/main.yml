@@ -26,7 +26,7 @@ jobs:
 
         - name: 'Install requirements'
           run: |
-            brew install pipx
+      
             pipx install -r ./requirements.txt
 #           python3 -m pip install --upgrade pip
         - name: 'Renew'
