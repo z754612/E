@@ -27,8 +27,7 @@ jobs:
         - name: 'Install requirements'
           run: |
       
-            pipx install helium
-            pipx install requests
+            python3 -m pip install -r ./requirements.txt
 #           python3 -m pip install --upgrade pip
         - name: 'Renew'
           env:
