@@ -27,7 +27,7 @@ jobs:
         - name: 'Install requirements'
           run: |
       
-            python3 -m pip install -r ./requirements.txt
+            python3 -m pip install --break-system-packages -r ./requirements.txt
 #           python3 -m pip install --upgrade pip
         - name: 'Renew'
           env:
